@@ -1,0 +1,9 @@
+<h2>hello</h2>
+
+
+<% @products.each do |product| %>
+  <%= product.created_at %>#
+
+  <%= cl_image_tag product.photo.path %>
+  <br>
+<% end %>
