@@ -2,5 +2,7 @@
 <%= simple_form_for(@product) do |f| %>
   <%= f.input :title %>
   <%= f.input :photo, as: :attachinary %>
+  <%= f.input :category, collection: ["Homepage","Still","Fashion","Portrait"], as: :select, required: true %>
   <%= f.submit %>
 <% end %>
+

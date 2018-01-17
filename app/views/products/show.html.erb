@@ -1,6 +1,24 @@
-<h2>hello</h2>
-<% @products.each do |product| %>
-  <div class="image-fit">
-    <%= cl_image_tag product.photo.path %>
+
+  <div class="pages-wrapper">
+
+
+
+
+<!-- Slider -->
+<div id="scroll-feature" class="horiz-scroll">
+  <div class="scroller">
+    <div class="left-scroll">
+      <i class="fa fa-angle-left fa-4x", style="color: white"></i>
+    </div>
+    <div class="right-scroll">
+      <i class="fa fa-angle-right fa-4x", style="color: white"></i>
+    </div>
+    <div class="scroll-images scrollable-x">
+    <% @products.each do |product| %>
+        <%= cl_image_tag product.photo.path %>
+    <% end %>
+    </div>
   </div>
-<% end %>
+</div>
+
+</div>
