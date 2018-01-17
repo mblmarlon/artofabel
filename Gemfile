@@ -11,12 +11,16 @@ gem 'redis'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 4.7.0'
+gem "font-awesome-rails"
 gem 'jquery-rails'
 gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem "coffee-rails"
+
+#swipebox
+gem 'swipebox'
 
 
 gem 'devise'

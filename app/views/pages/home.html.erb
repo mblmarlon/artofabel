@@ -1,9 +1,26 @@
-<div class="pages-wrapper">
-  <div class="title">
-    <h1>Abel Farkass</h1>
-    <h2>Photography</h2>
+
+  <div class="pages-wrapper">
+
+
+
+
+<!-- Slider -->
+<div id="scroll-feature" class="horiz-scroll">
+  <div class="scroller">
+    <div class="left-scroll">
+      <i class="fa fa-angle-left fa-4x", style="color: white"></i>
+    </div>
+    <div class="right-scroll">
+      <i class="fa fa-angle-right fa-4x", style="color: white"></i>
+    </div>
+    <div class="scroll-images scrollable-x">
+    <% @products.each do |product| %>
+        <%= cl_image_tag product.photo.path %>
+    <% end %>
+    </div>
   </div>
-<p>Find me in app/views/pages/home.html.erb</p>
+</div>
+
 </div>
 
 
