@@ -48,9 +48,32 @@
             <% end %>
           </li>
           <li>
-            <%= link_to destroy_user_session_path, method: :delete do %>
-              <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Log out") %>
-            <% end %>
+           <div class="nav-right">
+              <%= link_to pages_fashion_path do %>
+                <%= t(".profile", default: "Fashion") %>
+              <% end %>
+            </div>
+          </li>
+          <li>
+            <div class="nav-right">
+              <%= link_to pages_portrait_path do %>
+                <%= t(".profile", default: "Portrait") %>
+              <% end %>
+            </div>
+          </li>
+          <li>
+            <div class="nav-right">
+              <%= link_to pages_still_path do %>
+                <%= t(".profile", default: "Still") %>
+              <% end %>
+            </div>
+          </li>
+          <li>
+            <div class="nav-right">
+              <%= link_to pages_contact_path do %>
+                <%= t(".profile", default: "Contact") %>
+              <% end %>
+            </div>
           </li>
       </ul>
     </div>
