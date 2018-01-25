@@ -22,6 +22,9 @@ gem "coffee-rails"
 #swipebox
 gem 'swipebox'
 
+#admin
+gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
 gem 'devise'
 gem 'figaro'

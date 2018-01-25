@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
   mount Attachinary::Engine => "/attachinary"
   resources :products, only: [:create, :new, :destroy, :show]
   devise_for :users
