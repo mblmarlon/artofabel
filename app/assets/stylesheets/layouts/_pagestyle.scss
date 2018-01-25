@@ -32,9 +32,13 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 20vw;
+  width: 40vw;
   background-color: white;
   padding: 2em;
   box-shadow: 0px 0px 8px #f3f0f0;
 
+  @media only screen and (max-width: 1260px) {
+    width: 100vw;
+  }
 }
+
